@@ -1,0 +1,46 @@
+<!--
+ *  Created Date: Tuesday, December 6th 2022 
+ *  Contact Info: luoxiangyong01@gmail.com 
+ *  Author/Copyright: Mr. Xiangyong Luo 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>NVTA Network Performance</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .mapMain {
+                height: 800px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map_option" style="height: 5vh;">
+            <button id="button_0" onclick="changeMap(this.id)" style="height:4vh;">First Button</button>
+            <button id="button_1" onclick="changeMap(this.id)" style="height:4vh;">Second Button</button>
+        </div>
+        <div id="map_0" class="mapMain"> first</div>
+        <div id= "map_1" calss="mapMain"> second </div>
+        <script type="text/javascript">
+            window.onload = changeMap("button_0");
+            function changeMap(button_id){
+                var map_id_list = ["map_0", "map_1"];
+                var tt = 'good morning and "vry" sepecial function { var good = "morning";}';
+                var click_button = "map_" + button_id.substring(7,);
+                console.log(click_button, map_id_list, tt);
+                for (var i = 0; i < map_id_list.length; i++){
+                    if (map_id_list[i] != click_button){
+                        document.getElementById(map_id_list[i]).style.display = "none";
+                    }
+                    else {
+                        document.getElementById(map_id_list[i]).style.display = "block";
+                    };
+                }
+            }
+        </script>
+    </body>
+</html>
