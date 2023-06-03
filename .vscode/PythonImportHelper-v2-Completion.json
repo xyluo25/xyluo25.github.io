@@ -1,0 +1,56 @@
+[
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "urllib.request",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "detail": "urllib.request",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "GitHubFileDownloader",
+        "kind": 6,
+        "importPath": "src.github_file_downloader",
+        "description": "src.github_file_downloader",
+        "peekOfCode": "class GitHubFileDownloader:\n    def __init__(self, repo_url, flatten_files=True, output_dir=\"./\"):\n        \"\"\"The GitHubFileDownloader is used to Downloads the files and directories in repo_url.\n        Args:\n            repo_url (str): The URL of the GitHub repository to download from. Can be a blob or tree path.\n                directory: \"https://github.com/xyluo25/openNetwork/blob/main/docs\"\n                single file: \"https://github.com/xyluo25/openNetwork/blob/main/docs/canada_cities.csv\"\n            flatten_files (bool, optional): If flatten is specified, the contents of any and all sub-directories\n                                            will be pulled upwards into the root folder. Defaults to True.\n            output_dir (str, optional): The output directory to write. Defaults to \"./\".",
+        "detail": "src.github_file_downloader",
+        "documentation": {}
+    }
+]
